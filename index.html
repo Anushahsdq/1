@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushah: A Radiant Journey - Official Fan Page</title>
+    <meta name="description" content="A dedicated fan page celebrating Anushah's captivating voice, inspiring presence, and diverse talents as a singer, presenter, and esteemed English teacher. Explore her music, presentations, teaching, and connect with her journey.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* -------------------------------------------------------------------
+            CSS Global Variables & Base Styles
+        ------------------------------------------------------------------- */
+        :root {
+            --color-primary-light: #f4e8f7; /* Lighter Blush Pink */
+            --color-primary-medium: #d6b3e6; /* Soft Lavender */
+            --color-primary-dark: #8e44ad; /* Deep Amethyst */
+            --color-accent: #ffc4f8; /* Vibrant Rose Gold */
+            --color-background-light: #ffffff; /* Pure White */
+            --color-background-med: #fdfaff; /* Off-white with a hint of purple */
+            --color-text-dark: #2c3e50; /* Charcoal Grey */
+            --color-text-light: #f8f9fa; /* Almost White */
+            --color-button-primary: #8e44ad;
+            --color-button-hover: #7b2cbf; /* Brighter Purple for Hover */
+            --color-danger: #e74c3c;
+            --color-danger-hover: #c0392b;
+
+            --border-radius-soft: 12px;
+            --shadow-soft: 0 8px 30px rgba(142, 68, 173, 0.1);
+            --shadow-medium: 0 10px 40px rgba(142, 68, 173, 0.15);
+            --transition-fast: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --transition-medium: 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--color-background-light);
+            color: var(--color-text-dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* -------------------------------------------------------------------
+            Utility & Structure
+        ------------------------------------------------------------------- */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: var(--color-background-light);
+            border-radius: var(--border-radius-soft);
+            box-shadow: var(--shadow-soft);
+            transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8em;
+            color: var(--color-primary-dark);
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+            padding-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 4px;
+            background: linear-gradient(270deg, var(--color-primary-medium), var(--color-accent));
+            border-radius: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(270deg, var(--color-button-primary), var(--color-button-hover));
+            color: var(--color-text-light);
+            padding: 14px 38px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1em;
+            transition: all var(--transition-fast);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        /* -------------------------------------------------------------------
+            Header & Hero Section
+        ------------------------------------------------------------------- */
+        .hero-section {
+            background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary-medium) 100%);
+            color: var(--color-text-light);
+            padding: 120px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><g fill-opacity="0.1"><circle fill="%23FFFFFF" cx="400" cy="400" r="400"/><circle fill="%23f4e8f7" cx="400" cy="400" r="300"/><circle fill="%23d6b3e6" cx="400" cy="400" r="200"/><circle fill="%238e44ad" cx="400" cy="400" r="100"/></g></svg>');
+            background-size: cover;
+            opacity: 0.2;
+            animation: spin 80s linear infinite;
+        }
+
+        .hero-content {
+            z-index: 1;
+            position: relative;
+            animation: fadeInScale 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+        }
+
+        .hero-title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 6em;
+            margin: 0;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            color: var(--color-accent);
+        }
+
+        .hero-subtitle {
+            font-size: 1.4em;
+            margin-top: 10px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            opacity: 0;
+            animation: fadeIn 2s 0.5s forwards;
+        }
+
+        .hero-cta {
+            margin-top: 40px;
+            opacity: 0;
+            animation: fadeIn 2s 1s forwards;
+        }
+
+        /* -------------------------------------------------------------------
+            Sticky Navigation
+        ------------------------------------------------------------------- */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--color-primary-light);
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin: 0 25px;
+        }
+
+        .nav-link {
+            color: var(--color-primary-dark);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05em;
+            position: relative;
+            padding: 5px 0;
+            transition: color var(--transition-fast);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(270deg, var(--color-primary-medium), var(--color-accent));
+            left: 50%;
+            bottom: -8px;
+            transform: translateX(-50%);
+            transition: width var(--transition-fast);
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--color-button-hover);
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* -------------------------------------------------------------------
+            About Section
+        ------------------------------------------------------------------- */
+        #about p {
+            font-size: 1.05em;
+            color: #555;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1.2em;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid;
+            border-image: linear-gradient(45deg, var(--color-primary-medium), var(--color-accent)) 1;
+            box-shadow: var(--shadow-medium);
+            margin-bottom: 30px;
+        }
+
+        /* -------------------------------------------------------------------
+            Media & Presentations Section
+        ------------------------------------------------------------------- */
+        .media-embed {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 30px auto;
+            border-radius: var(--border-radius-soft);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .media-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .media-subsection {
+            margin-bottom: 50px;
+        }
+        
+        .media-subsection h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            color: var(--color-primary-dark);
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .media-subsection p {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            color: #666;
+        }
+
+        /* -------------------------------------------------------------------
+            Music Player Section
+        ------------------------------------------------------------------- */
+        .music-playlist {
+            display: grid;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .music-item {
+            background-color: var(--color-background-med);
+            padding: 20px;
+            border-radius: var(--border-radius-soft);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .music-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .music-item-info h4 {
+            color: var(--color-primary-dark);
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .music-item-info p {
+            font-size: 0.95em;
+            color: #555;
+            font-style: italic;
+        }
+        
+        .music-controls iframe {
+            border-radius: 8px;
+        }
+        
+        /* -------------------------------------------------------------------
+            Gallery Section
+        ------------------------------------------------------------------- */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius-soft);
+            box-shadow: var(--shadow-soft);
+            cursor: pointer;
+            aspect-ratio: 1 / 1;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-medium), filter var(--transition-medium);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            filter: brightness(1.05);
+        }
+        
+        .gallery-item::before {
+            content: attr(data-alt);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            font-weight: 600;
+            transform: translateY(100%);
+            transition: transform var(--transition-fast);
+            pointer-events: none;
+        }
+        
+        .gallery-item:hover::before {
+            transform: translateY(0);
+        }
+
+        .gallery-item::after {
+            content: '\f00e'; /* Font Awesome search-plus icon */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.5);
+            color: var(--color-text-light);
+            background-color: rgba(142, 68, 173, 0.7);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            opacity: 0;
+            transition: opacity var(--transition-fast), transform var(--transition-fast);
+            pointer-events: none;
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        /* -------------------------------------------------------------------
+            Quotes Section
+        ------------------------------------------------------------------- */
+        .quote-carousel {
+            background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary-medium));
+            padding: 50px 30px;
+            border-radius: var(--border-radius-soft);
+            text-align: center;
+            margin-top: 50px;
+            color: var(--color-text-light);
+        }
+        
+        .quote-carousel .section-title {
+            color: var(--color-text-light);
+        }
+        
+        .quote-carousel .section-title::after {
+             background: var(--color-accent);
+        }
+
+        .quote-display {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            font-style: italic;
+            margin: 0 auto;
+            min-height: 120px; /* Prevent layout shift */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* -------------------------------------------------------------------
+            Latest Updates Section
+        ------------------------------------------------------------------- */
+        .updates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .update-card {
+            background-color: var(--color-background-med);
+            padding: 30px;
+            border-radius: var(--border-radius-soft);
+            border: 1px solid var(--color-primary-light);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+            text-align: center;
+        }
+
+        .update-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .update-card h3 {
+            color: var(--color-primary-dark);
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .update-card p {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .update-card .date {
+            font-size: 0.85em;
+            color: #888;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        
+        /* -------------------------------------------------------------------
+            Fan Messages Section
+        ------------------------------------------------------------------- */
+        .fan-messages-container {
+            background-color: var(--color-background-med);
+            padding: 40px;
+            border-radius: var(--border-radius-soft);
+        }
+
+        .message-stream {
+            list-style: none;
+            max-height: 450px;
+            overflow-y: auto;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: var(--color-background-light);
+            margin-top: 30px;
+        }
+
+        .message-stream::-webkit-scrollbar { width: 8px; }
+        .message-stream::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+        .message-stream::-webkit-scrollbar-thumb { background: var(--color-primary-medium); border-radius: 10px; }
+        .message-stream::-webkit-scrollbar-thumb:hover { background: var(--color-primary-dark); }
+        
+        .message-item {
+            padding: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            position: relative;
+        }
+
+        .message-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .message-meta {
+            font-size: 0.8em;
+            color: #777;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .message-text {
+            font-size: 1em;
+            color: var(--color-text-dark);
+            word-wrap: break-word;
+        }
+
+        .delete-btn {
+            background-color: transparent;
+            color: var(--color-danger);
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, background-color 0.2s;
+        }
+        
+        .delete-btn:hover { background-color: #ffebee; }
+        
+        body.admin-mode .delete-btn {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .message-input-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .message-input-form textarea {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius-soft);
+            font-family: inherit;
+            font-size: 1em;
+            resize: vertical;
+            min-height: 100px;
+            transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+        }
+
+        .message-input-form textarea:focus {
+            border-color: var(--color-primary-dark);
+            box-shadow: 0 0 8px rgba(142, 68, 173, 0.2);
+            outline: none;
+        }
+
+        .message-input-form button {
+            align-self: flex-end;
+        }
+
+        /* -------------------------------------------------------------------
+            Connect Section (Social Links)
+        ------------------------------------------------------------------- */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: var(--color-text-dark);
+            font-size: 2.5em;
+            transition: color var(--transition-fast), transform var(--transition-fast);
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-5px);
+        }
+        
+        .social-links .fa-instagram:hover { color: #E1306C; }
+        .social-links .fa-tiktok:hover { color: #000000; }
+        .social-links .fa-linkedin-in:hover { color: #0077B5; }
+
+        /* -------------------------------------------------------------------
+            Footer
+        ------------------------------------------------------------------- */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--color-primary-dark);
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 50px;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0 0 10px 0;
+            font-size: 0.95em;
+        }
+
+        footer a {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color var(--transition-fast);
+        }
+
+        footer a:hover {
+            color: var(--color-text-light);
+            text-decoration: underline;
+        }
+
+        .admin-login-link {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 0.85em;
+            color: rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+        }
+
+        /* -------------------------------------------------------------------
+            Scroll to Top Button
+        ------------------------------------------------------------------- */
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            background-color: var(--color-primary-dark);
+            color: var(--color-text-light);
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: background-color var(--transition-fast), transform var(--transition-fast), opacity var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+        
+        #scrollToTopBtn.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: var(--color-button-hover);
+            transform: scale(1.1);
+        }
+
+        /* -------------------------------------------------------------------
+            Loading Spinner
+        ------------------------------------------------------------------- */
+        #loadingSpinner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-primary-dark);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 10001;
+            transition: opacity 0.7s ease-out;
+        }
+
+        #loadingSpinner.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            border: 6px solid rgba(255, 255, 255, 0.3);
+            border-top-color: var(--color-accent);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s ease-in-out infinite;
+            margin-bottom: 20px;
+        }
+        
+        #loadingSpinner p {
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+
+        /* -------------------------------------------------------------------
+            Modal for Image Preview
+        ------------------------------------------------------------------- */
+        .modal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            z-index: 1001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.85);
+            backdrop-filter: blur(5px);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s, visibility 0.4s;
+        }
+
+        .modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            display: block;
+            max-width: 90vw;
+            max-height: 85vh;
+            border-radius: var(--border-radius-soft);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            transform: scale(0.8);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 30px;
+            color: #f1f1f1;
+            font-size: 40px;
+            line-height: 1;
+            transition: 0.3s;
+            cursor: pointer;
+            z-index: 1002;
+        }
+
+        .modal-close:hover,
+        .modal-close:focus {
+            color: var(--color-accent);
+        }
+
+        .modal-nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            font-size: 2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 8px;
+            user-select: none;
+        }
+
+        .modal-nav-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        #prevImageBtn { left: 15px; }
+        #nextImageBtn { right: 15px; }
+
+        /* -------------------------------------------------------------------
+            Animations
+        ------------------------------------------------------------------- */
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fadeInScale { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* -------------------------------------------------------------------
+            Responsive Design
+        ------------------------------------------------------------------- */
+        @media (max-width: 992px) {
+            .hero-title { font-size: 5em; }
+            .hero-subtitle { font-size: 1.2em; }
+            .section-title { font-size: 2.5em; }
+            .container { padding: 30px; }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 3.8em; }
+            .hero-subtitle { font-size: 1.1em; }
+            .section-title { font-size: 2.2em; }
+            
+            .navbar { padding: 10px 0; }
+            .nav-list { flex-wrap: wrap; justify-content: center; gap: 5px 15px; }
+            .nav-item { margin: 0 10px; }
+            
+            .image-gallery { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+            .updates-grid { grid-template-columns: 1fr; }
+            .modal-nav-button { font-size: 1.8em; padding: 10px 15px; }
+        }
+
+        @media (max-width: 480px) {
+            body { line-height: 1.6; }
+            .hero-title { font-size: 2.8em; }
+            .hero-subtitle { font-size: 1em; }
+            .btn { padding: 12px 30px; font-size: 0.95em; }
+            .section-title { font-size: 2em; }
+            
+            /* Hides the nav list on very small screens, ready for a burger menu */
+            .nav-list { display: none; } 
+
+            .social-links { gap: 20px; }
+            .social-links a { font-size: 2.2em; }
+
+            .message-input-form button { width: 100%; }
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="loadingSpinner">
+    <div class="spinner"></div>
+    <p>Loading Anushah's Radiant Journey...</p>
+</div>
+
+<header class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">Anushah</h1>
+        <p class="hero-subtitle">Singer, Economist, Teacher, Inspirer</p>
+        <div class="hero-cta">
+            <a href="#about" class="btn">Discover Her Journey</a>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar">
+    <ul class="nav-list">
+        <li class="nav-item"><a href="#about" class="nav-link active">About</a></li>
+        <li class="nav-item"><a href="#media" class="nav-link">Media</a></li>
+        <li class="nav-item"><a href="#music" class="nav-link">Music</a></li>
+        <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="#updates" class="nav-link">Updates</a></li>
+        <li class="nav-item"><a href="#fan-messages" class="nav-link">Messages</a></li>
+        <li class="nav-item"><a href="#connect" class="nav-link">Connect</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="about" class="container text-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4LnQQO5ULh902Z1fccHpAPTfMnKsS5m-Hsw&s" alt="Anushah Profile" class="profile-img">
+        <h2 class="section-title">About Anushah</h2>
+        <p>Anushah is a multifaceted talent, known for her captivating voice, inspiring presence, and dedication to education. As a passionate singer, she effortlessly blends various genres, touching hearts with her soulful renditions. Beyond music, Anushah is a dynamic presenter, bringing energy and charisma to every stage.</p>
+        <p>She is also an amazing English teacher, committed to fostering language skills and confidence in her students. Her journey is a testament to dedication, creativity, and a radiant spirit that shines through all her endeavors.</p>
+        <p>This fan page is a tribute to her artistry and her inspiring journey. Join us in celebrating her achievements and staying connected with her latest ventures!</p>
+    </section>
+
+    <section id="media" class="container">
+        <h2 class="section-title">Media & Presentations</h2>
+        
+        <div class="media-subsection">
+            <h3>YouTube Channel</h3>
+            <p>Dive into Anushah's world! Watch her captivating performances and engaging presentations. Don't forget to subscribe for more amazing content!</p>
+            <div class="media-embed">
+                <iframe src="https://www.youtube.com/embed/2NR2qaiDKuE?si=ynCDXlOHS_k-Sh2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div class="media-subsection">
+            <h3>Business Presentations</h3>
+            <p>Anushah isn't just a performer; she's an aspiring entrepreneur with great business ideas! Explore her vision in the presentation below.</p>
+            <div class="media-embed">
+                <iframe src="https://prezi.com/embed/lkivyh_941me/?bgcolor=ffffff&lock_to_path=0&autoplay=0&html5=1&share=1&tabs=0&plus_signup=1&mouse_mode=visible" title="UpcycWarmth: Sustainable Bedding Solutions" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="media-subsection text-center">
+            <h3>English Teaching Showcase</h3>
+            <p>Experience Anushah's engaging teaching style. Watch her in action and then book your own class to learn from the best!</p>
+             <div class="media-embed">
+                <iframe src="https://www.youtube.com/embed/XBLE5IXYcUQ?si=ozBdOJBXD6OkZ5oV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div style="margin-top: 30px;">
+                <a href="https://engoo.com/tutors/54493" target="_blank" class="btn">Book a Class on Engoo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="music" class="container">
+        <h2 class="section-title">Anushah's Music</h2>
+        <p class="text-center">Immerse yourself in Anushah's mesmerizing voice. Also, check out her insightful podcast: <a href="https://www.instagram.com/the.choicast?igsh=MWQ4bTJhb2hqbWJxeA==" target="_blank" style="color: var(--color-primary-dark); font-weight: 600;">The Choicast</a>!</p>
+
+        <div class="music-playlist">
+            <div class="music-item">
+                <div class="music-item-info">
+                    <h4>Tumhay dillagy bhool jane paday gi</h4>
+                    <p>The first song that introduced me to her, forever grateful.</p>
+                </div>
+                <div class="music-controls">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2110146543&color=%238e44ad&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                </div>
+            </div>
+
+            <div class="music-item">
+                <div class="music-item-info">
+                    <h4>The Night We Met!</h4>
+                    <p>I day-dream a lot listening to these lines... she sings with her soul.</p>
+                </div>
+                <div class="music-controls">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2110146510&color=%238e44ad&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                </div>
+            </div>
+
+            <div class="music-item">
+                <div class="music-item-info">
+                    <h4>Phir bhi tumko chahungi</h4>
+                    <p>Quite sad the subject isn't me, but whatever, she should be happy, that's what matters!</p>
+                </div>
+                <div class="music-controls">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2110146447&color=%238e44ad&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container">
+        <h2 class="section-title">Gallery</h2>
+        <p class="text-center">A visual journey through Anushah's moments, performances, and behind-the-scenes glimpses.</p>
+        <div class="image-gallery">
+            <div class="gallery-item" data-alt="Her smile >>>"><img src="https://scontent.cdninstagram.com/v/t51.75761-15/484627614_18033963542627801_3664713110797137558_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=MzU4ODc1OTQ5NDg1NTg5NTg0OA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIyNjh4NDAzMi5zZHIifQ%3D%3D&_nc_ohc=eqL-n5lKNosQ7kNvwEDolVv&_nc_oc=AdleOF5yt86mZM9HguMLZaERhampsXPsSYG-GsBde2VTNLOSeMz7B3kk3FtMABqkpvE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=qDh250zuEyrn-othbn2Utw&oh=00_AfO9KPOrS4PzbzyWERVqTmr0WyCZEBrA3hBGa_c6XSOOyQ&oe=684BD338" alt="Her smile >>>"></div>
+            <div class="gallery-item" data-alt="Goddess"><img src="https://scontent.cdninstagram.com/v/t51.75761-15/491447965_18038358716627801_8714653888411760940_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=MzYxNzk3NDMwNzYwMzQ2OTM2Ng%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIyNjh4NDAzMi5zZHIifQ%3D%3D&_nc_ohc=8qiqPpp6ikgQ7kNvwGbJDhI&_nc_oc=AdkYCcisKmw5PQs4TQ8UOtL_dLq_VNvMuu-kg07y1NJVzHfB7t0x2M-YsHMsmtAz7-I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=deSQbfuQjQ66Xf-p96OWQg&oh=00_AfN5Nb_kdJgGjCo882WPKp7w2KmuuNQMmadEfu_sX53EMQ&oe=684BE19A" alt="Goddess"></div>
+            <div class="gallery-item" data-alt="Class"><img src="https://scontent.cdninstagram.com/v/t51.75761-15/491446946_18037047122627801_6304133026489081456_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=104&ig_cache_key=MzYwOTI0NDU3NjEyMDk3ODI4NQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIyNjh4NDAzMi5zZHIifQ%3D%3D&_nc_ohc=OhrNApmVj-UQ7kNvwHN4btv&_nc_oc=Adm_YhyisAKrk-NbJJp15Hx6cHMAy8JoYavH7yEubeqR116wExALWCofGAooQ0zeosE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=deSQbfuQjQ66Xf-p96OWQg&oh=00_AfOROZk0Z0ltcKzmyxq1hfDwSIPYBprKZWmzhZ6rYXVYrA&oe=684BEDFA" alt="Class"></div>
+            <div class="gallery-item" data-alt="Hoor? No, better!"><img src="https://scontent.cdninstagram.com/v/t51.75761-15/486046572_18034655393627801_8795629204593422860_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&ig_cache_key=MzU5MzE5ODc2MTI0MTk5OTkxNw%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIyNjh4NDAzMi5zZHIifQ%3D%3D&_nc_ohc=YEWuDMjhCEUQ7kNvwGRE4tk&_nc_oc=AdlbQNXZW0ydTzanPOiAQbZ1dNsxjO7yeHKyCMsiuanoTiIY0i1YLgjLqVnnK3tZnHE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=qDh250zuEyrn-othbn2Utw&oh=00_AfPH3coFDKtoDihgdaBOlCPVNAiSpx9tL3bgT2cGBbISmQ&oe=684BD605" alt="Hoor? No, better!"></div>
+            <div class="gallery-item" data-alt="Miss Universe"><img src="https://scontent.cdninstagram.com/v/t51.75761-15/478627334_18030488612627801_1250409521823487706_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=MzU2Nzk1NDY2Mzg5NTQ2OTA5OTE4MDMwNDg4NjA2NjI3ODAx.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIyNjh4NDAzMi5zZHIifQ%3D%3D&_nc_ohc=TLx0gKl5Uy0Q7kNvwHVb70y&_nc_oc=AdnoI6xt1TRpfIGG_MlW6X4FtVmod3B2gLkLNno4sN9PNG0dqv_zpqQ3fPLdsK9pBrU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=qDh250zuEyrn-othbn2Utw&oh=00_AfNUxTB0pvjBNav7JwfAxTmYGdGgyxmPiiVnzOu6nvEExQ&oe=684BE218" alt="Miss Universe"></div>
+            <div class="gallery-item" data-alt="League of her own"><img src="https://scontent.cdninstagram.com/v/t51.71878-15/503801768_1885220842236413_6858709291079874532_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=MzQ5MTY5NzI5NDI0NTY4MjczNg%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIyNjh4NDAzMi5zZHIifQ%3D%3D&_nc_ohc=Eq3onX9dPKIQ7kNvwGlHMFC&_nc_oc=AdlNfhe2XHMXfebB0xdwNdqAeG4Nc_o_4LMS0FQJzGI__D8W0OCpOfr9k62MQLszKYA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=4h87ZX_biDCs4tvL4oHQ6A&oh=00_AfPjzWlBC_4hQE9Fd6NENHHj5uSpjA-lKm-g8ZH1PZFK2g&oe=684BD019" alt="League of her own"></div>
+            <div class="gallery-item" data-alt="She ain't real"><img src="https://scontent.cdninstagram.com/v/t51.75761-15/472412775_18026091347627801_3212238662306456175_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=MzU0MDgyODAwOTExNzU2Mjg1NjE4MDI2MDkxMzQ0NjI3ODAx.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIyNjh4NDAzMi5zZHIifQ%3D%3D&_nc_ohc=E1INupcVtRgQ7kNvwEgDRPu&_nc_oc=Adk_CGB_sr9Yt1rcLE2Ae7oZ3xZCts5dyhYmi5ms5LO3fQ141gBudJSMXHdc6Nj3Rz4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=F_LqNNuICQ1me3yFAwecbQ&oh=00_AfPKk4YSNg0DiCzBuwzLKqPSHD0NS5VHwwBOutRD_NnB1g&oe=684BF495" alt="She ain't real"></div>
+            <div class="gallery-item" data-alt="Simply stunning"><img src="https://scontent.cdninstagram.com/v/t51.75761-15/494730539_18039214361627801_5317444419295012710_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ig_cache_key=MzYyMzU3NzA0MzM5MjkyMDAzNw%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjIyNjh4NDAzMi5zZHIifQ%3D%3D&_nc_ohc=IFbvVDFdFfAQ7kNvwE36Pk8&_nc_oc=AdlKSVOxX5MsjRahptcwM16ZyMn0TKHBqgeVJki-iDhSOWC3CpsEDOa5q8CX-1Ki4uQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=PoZVig3yglQsscuIjnUNLg&oh=00_AfP_9iuiy7Ldx9cD39umE6uciuaTs2E0XRiSnjWoO_A94Q&oe=684BDC07" alt="Simply stunning"></div>
+        </div>
+    </section>
+
+    <section class="quote-carousel">
+        <h2 class="section-title">Words of Inspiration</h2>
+        <blockquote class="quote-display" id="quoteDisplay"></blockquote>
+    </section>
+
+    <section id="updates" class="container">
+        <h2 class="section-title">Latest Updates</h2>
+        <div class="updates-grid">
+            <div class="update-card">
+                <h3>Guess what I found...</h3>
+                <p>Just found her mum's account, and now I see where she got those pretty genes from. Beauty standards going up everyday!</p>
+                <p class="date">June 6th, 2025</p>
+            </div>
+            <div class="update-card">
+                <h3>...and her dad's too!</h3>
+                <p>This man has more degrees and published papers than my last three professors combined... hats off!</p>
+                <p class="date">June 6th, 2025</p>
+            </div>
+            <div class="update-card">
+                <h3>It Happened, Finally!!</h3>
+                <p>After countless attempts, I've finally been noticed! Queenie shared my post on her story. I'm over the moon!</p>
+                <p class="date">June 6th, 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fan-messages" class="container fan-messages-container">
+        <h2 class="section-title">Messages for Anushah</h2>
+        <p class="text-center">Share your appreciation and messages with Anushah! Your words of encouragement mean the world.</p>
+        
+        <form class="message-input-form" id="messageForm">
+            <textarea id="messageInput" placeholder="Write your heartfelt message here..." required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <ul class="message-stream" id="messageStream">
+            </ul>
+    </section>
+
+    <section id="connect" class="container text-center">
+        <h2 class="section-title">Connect with Anushah</h2>
+        <p>Follow Anushah on her official social media channels to stay updated!</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/aryan_sdq?igsh=MWh4b3p5ajd4NDI2cQ==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@aryan_sdq?_t=ZS-8x2a2VzSK96&_r=1" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/in/anushah-sdq-5744b5203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div style="margin-top: 30px;">
+            <p>For professional inquiries or collaborations:</p>
+            <a href="mailto:anushahsdq@gmail.com" class="btn">Send an Inquiry</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Anushah: A Radiant Journey | A Fan Tribute</p>
+    <p>Crafted with passion by <a href="https://www.instagram.com/shaolven?igsh=eGlpa3B2d2txcjl4" target="_blank">@shaolven</a></p>
+    <a href="#" id="adminLoginLink" class="admin-login-link">Admin Login</a>
+</footer>
+
+<button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+<div id="imageModal" class="modal">
+    <span class="modal-close" title="Close">×</span>
+    <button id="prevImageBtn" class="modal-nav-button" title="Previous">❮</button>
+    <img class="modal-content" id="modalImage" alt="Gallery image preview">
+    <button id="nextImageBtn" class="modal-nav-button" title="Next">❯</button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    // --- Preloader ---
+    const loadingSpinner = document.getElementById('loadingSpinner');
+    window.addEventListener('load', () => {
+        loadingSpinner.classList.add('hidden');
+    });
+
+    // --- Smooth Scrolling ---
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    // --- Active Nav Link Highlighting ---
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const observerOptions = { rootMargin: '-50% 0px -50% 0px' };
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const navLink = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+                navLinks.forEach(link => link.classList.remove('active'));
+                if (navLink) navLink.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => sectionObserver.observe(section));
+
+    // --- Scroll to Top Button ---
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            scrollToTopBtn.classList.add('visible');
+        } else {
+            scrollToTopBtn.classList.remove('visible');
+        }
+    });
+
+    // --- Quote Carousel ---
+    const quotes = [
+        "\"Guchar daltaas\"",
+        "\"Her voice is pure magic, a true gift to the world.\"",
+        "\"Her presentations are insightful and truly engaging.\"",
+        "\"A radiant star in the making, inspiring with every step.\"",
+        "\"Her dedication is evident in every performance. Simply brilliant!\"",
+        "\"Teaching transformed into an enjoyable and effective experience.\""
+    ];
+    let currentQuoteIndex = 0;
+    const quoteDisplay = document.getElementById('quoteDisplay');
+
+    function displayQuote() {
+        if (!quoteDisplay) return;
+        quoteDisplay.style.opacity = 0;
+        setTimeout(() => {
+            quoteDisplay.textContent = quotes[currentQuoteIndex];
+            currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+            quoteDisplay.style.opacity = 1;
+        }, 500);
+    }
+    displayQuote();
+    setInterval(displayQuote, 5000);
+
+    // --- Gallery Modal ---
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeBtn = document.querySelector('.modal-close');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const prevBtn = document.getElementById('prevImageBtn');
+    const nextBtn = document.getElementById('nextImageBtn');
+    let currentImageIndex;
+
+    const images = Array.from(galleryItems).map(item => item.querySelector('img').src);
+    
+    const openModal = (index) => {
+        currentImageIndex = index;
+        modalImage.src = images[currentImageIndex];
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    };
+
+    const closeModal = () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    };
+    
+    const showNextImage = () => {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        modalImage.src = images[currentImageIndex];
+    };
+    
+    const showPrevImage = () => {
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        modalImage.src = images[currentImageIndex];
+    };
+
+    galleryItems.forEach((item, index) => {
+        item.addEventListener('click', () => openModal(index));
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', e => (e.target === modal) && closeModal());
+    nextBtn.addEventListener('click', showNextImage);
+    prevBtn.addEventListener('click', showPrevImage);
+
+    document.addEventListener('keydown', e => {
+        if (modal.classList.contains('active')) {
+            if (e.key === 'ArrowRight') showNextImage();
+            if (e.key === 'ArrowLeft') showPrevImage();
+            if (e.key === 'Escape') closeModal();
+        }
+    });
+
+    // --- Fan Messages (Client-side Simulation) ---
+    const messageForm = document.getElementById('messageForm');
+    const messageInput = document.getElementById('messageInput');
+    const messageStream = document.getElementById('messageStream');
+    const adminLoginLink = document.getElementById('adminLoginLink');
+    let messages = JSON.parse(localStorage.getItem('fanMessages')) || [
+        { id: 1, text: "Anushah, your voice is simply breathtaking! Keep sharing your talent.", timestamp: new Date('2025-06-01T10:30:00') },
+        { id: 2, text: "Absolutely loved your recent presentation. So inspiring!", timestamp: new Date('2025-06-03T14:15:00') },
+        { id: 3, text: "Your English teaching style is amazing. You make learning fun!", timestamp: new Date('2025-06-04T09:00:00') },
+    ];
+    let isAdminMode = sessionStorage.getItem('isAdminMode') === 'true';
+
+    const saveMessages = () => localStorage.setItem('fanMessages', JSON.stringify(messages));
+    
+    const renderMessages = () => {
+        messageStream.innerHTML = '';
+        messages.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+        messages.forEach(msg => {
+            const li = document.createElement('li');
+            li.className = 'message-item';
+            li.dataset.id = msg.id;
+            const formattedDate = new Date(msg.timestamp).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' });
+            li.innerHTML = `
+                <div class="message-meta">
+                    <span>${formattedDate}</span>
+                    <button class="delete-btn" title="Delete message"><i class="fas fa-trash-alt"></i></button>
+                </div>
+                <p class="message-text">${msg.text.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</p>
+            `;
+            messageStream.appendChild(li);
+        });
+        document.body.classList.toggle('admin-mode', isAdminMode);
+    };
+
+    messageStream.addEventListener('click', e => {
+        const deleteBtn = e.target.closest('.delete-btn');
+        if (isAdminMode && deleteBtn) {
+            const messageId = parseInt(deleteBtn.closest('.message-item').dataset.id);
+            if (confirm('Are you sure you want to delete this message?')) {
+                messages = messages.filter(msg => msg.id !== messageId);
+                saveMessages();
+                renderMessages();
+            }
+        }
+    });
+
+    messageForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const messageText = messageInput.value.trim();
+        if (messageText) {
+            const newMessage = {
+                id: Date.now(),
+                text: messageText,
+                timestamp: new Date()
+            };
+            messages.push(newMessage);
+            saveMessages();
+            messageInput.value = '';
+            renderMessages();
+            messageStream.scrollTop = 0;
+        }
+    });
+
+    adminLoginLink.addEventListener('click', e => {
+        e.preventDefault();
+        const password = prompt("Enter Admin Password:");
+        if (password === "nuapleasedontmarryanyone") {
+            isAdminMode = true;
+            sessionStorage.setItem('isAdminMode', 'true');
+            alert("Admin mode activated!");
+            renderMessages();
+        } else if (password !== null) {
+            alert("Incorrect password.");
+        }
+    });
+
+    renderMessages();
+});
+</script>
+
+</body>
+</html>
